@@ -1,0 +1,15 @@
+# Jangkauan
+jangkauan_age <- range(data$Age)
+jangkauan_salary <- range(data$EstimatedSalary)
+
+cat("Jangkauan Age:", jangkauan_age[2] - jangkauan_age[1], "\n")
+cat("Jangkauan EstimatedSalary:", jangkauan_salary[2] - jangkauan_salary[1], "\n\n")
+
+# Quartil
+Quartil_age <- quantile(data$Age)
+Quartil_salary <- quantile(data$EstimatedSalary)
+
+cat("Quartil Age:\n")
+print(Quartil_age)
+cat("Quartil EstimatedSalary:\n")
+print(Quartil_salary)
